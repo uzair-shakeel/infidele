@@ -94,13 +94,13 @@ export default function ScrollableReviews() {
   };
 
   return (
-    <div className="mt-[203px] flex flex-col items-center justify-center w-full">
+    <div className="mt-[150px] md:mt-[203px] flex flex-col items-center justify-center w-full">
       {/* Header */}
-      <div className="text-center relative">
-        <div className="absolute -left-24 -top-10">
+      <div className="text-center relative pl-4">
+        <div className="absolute sm:-left-24 -top-20 md:-top-10">
           <Image src='/review-heading.svg' alt="logo" width={87} height={76}/>
         </div>
-        <h1 className="text-[64px] md:text-[64px] leading-[70.4px] tracking-[0.64px] font-bold text-[#FFF6E8]">
+        <h1 className="px-5 text-[46px] md:text-[64px] leading-[48px] md:leading-[70.4px] tracking-[0.64px] font-bold text-[#FFF6E8]">
           WE'VE HELPED THOUSANDS <br /> OF GOOD PEOPLE
         </h1>
       </div>
@@ -116,10 +116,10 @@ export default function ScrollableReviews() {
             return (
               <div
                 key={index}
-                className={`p-8 m-2 md:m-4 rounded-[16px] shadow-md flex flex-col justify-between w-full min-w-[307px] xl:min-w-[475px] min-h-[400px] ${bgColor.trim()}`}
+                className={`p-8 m-2 md:m-4 rounded-[16px] shadow-md flex flex-col justify-between w-full min-w-[307px] xl:min-w-[475px] min-h-[300px] ${bgColor.trim()}`}
               >
                 <div>
-                  <h2 className={`text-[30px] leading-[33px] font-bold mb-4 tracking-[0.24px] uppercase ${textColors.title}`}>
+                  <h2 className={`text-[30px] leading-[33px] font-bold mb-3 tracking-[0.24px] uppercase ${textColors.title}`}>
                     {title}
                   </h2>
                   <p className={`text-[12.03px] leading-[21px] mb-6 slider-p font-sans font-medium ${textColors.content}`}>

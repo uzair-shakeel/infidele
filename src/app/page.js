@@ -9,12 +9,15 @@ import Cheater from "./components/Cheater";
 export default function Home() {
   return (
     <div className="bg-[#1C1C1C]">
-      <div className=" lg:px-8 px-4">
+      <div className="lg:px-8 px-4">
         <Hero />
         <p className="text-center text-3xl roboto py-[200px] text-white uppercase">Working on it</p>
         <Cheater />
         <Telegram />
-        <Review />
+      </div>
+
+      <Review />
+      <div className="lg:px-8 px-4">
         <FAQs />
         <Search />
       </div>

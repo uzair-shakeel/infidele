@@ -19,7 +19,7 @@ export default function Hero() {
           <br />
           FIND OUT WITH AI IF YOUR{" "}
           <span className="text-[#F9BF28]">PARTNER</span>, <br />
-          IS <span className="text-[#F9BF28]">CHEATING</span>.
+          IS <span className="text-[#F9BF28]">CHEATING.</span>
         </h1>
         <div className="mt-6">
           <div className="flex flex-col items-center justify-center">
