@@ -98,9 +98,9 @@ export default function ScrollableReviews() {
       {/* Header */}
       <div className="text-center relative">
         <div className="absolute -left-24 -top-10">
-          <Image src='/review-heading.svg' alt="logo" width={87} height={76} />
+          <Image src='/review-heading.svg' alt="logo" width={87} height={76}/>
         </div>
-        <h1 className="text-4xl md:text-[64px] leading-tight font-bold text-[#FFF6E8]">
+        <h1 className="text-[64px] md:text-[64px] leading-[70.4px] tracking-[0.64px] font-bold text-[#FFF6E8]">
           WE'VE HELPED THOUSANDS <br /> OF GOOD PEOPLE
         </h1>
       </div>

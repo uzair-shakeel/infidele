@@ -39,16 +39,16 @@ const Cheater = () => {
         </div>
 
         {/* Cheater Profiles Section */}
-        <div className="flex flex-col md:flex-row flex-wrap justify-center md:justify-start gap-6">
+        <div className="mt-[50px] flex flex-col md:flex-row items-center flex-wrap justify-center  md:justify-start gap-6">
           {/* Example Cards */}
-          <div className="relative h-[233px] w-[234px] ">
+          <div className="relative h-[233px] w-[234px]">
             <div className=" overflow-hidden h-full w-full">
               <img
                 src="/kevin.png"
                 className="w-full h-full object-cover rounded-[14px]"
               />
             </div>
-            <p className="absolute h-[100px] w-[100px] flex items-center justify-center text-[20px] uppercase font-[700] -bottom-10 -right-5 p-5 text-[#F9BF28] bg-[#FFF6E8] rounded-full">
+            <p className="absolute h-[100px] w-[100px] flex items-center justify-center text-[20px] uppercase font-[700] -bottom-2 md:-bottom-10 -right-5 p-5 text-[#F9BF28] bg-[#FFF6E8] rounded-full">
               Cheater
             </p>
           </div>
@@ -67,8 +67,8 @@ const Cheater = () => {
       </div>
 
       {/* Cheater Details Section */}
-      <div className="mt-12 w-full max-w-[333px]">
-        <p className="text-[24px] font-[700] leading-[40px]">
+      <div className="mt-16 md:mt-12 w-full max-w-[333px]">
+        <p className="text-[24px] font-[700] leading-[40px] tracking-[0.24px]  mb-[62px]">
           WE WILL PROVIDE YOU ALL DETAILS (SO THEY CAN'T SAY IT'S AN OLD
           PROFILE)
         </p>

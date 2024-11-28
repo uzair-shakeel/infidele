@@ -2,7 +2,7 @@ import React from "react";
 
 const Telegram = () => {
   return (
-    <div className=" mt-[304px] text-white flex flex-col items-center justify-center max-w-[1200px] mx-auto">
+    <div className=" mt-[50px] md:mt-[304px] text-white flex flex-col items-center justify-center max-w-[1200px] mx-auto">
       {/* Left Section */}
       <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-12">
         {/* Left Content */}
