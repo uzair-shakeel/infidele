@@ -28,10 +28,10 @@ const Cheater = () => {
   };
 
   return (
-    <div className=" text-white min-h-screen flex flex-col md:flex-row items-center justify-center p-6">
+    <div className=" text-white flex flex-col md:flex-row items-center justify-between  max-w-[1200px] mx-auto">
       <div>
         {/* Header Section */}
-        <div className=" mb-12">
+        <div className="">
           <h1 className="text-[38px] md:text-[48px] lg:text-[64px] font-bold leading-[48px] md:leading-[70px]">
             WE ALREADY DETECTED <br />
             MORE THAN +5000 CHEATERS
@@ -67,7 +67,7 @@ const Cheater = () => {
       </div>
 
       {/* Cheater Details Section */}
-      <div className="mt-12 w-full max-w-2xl">
+      <div className="mt-12 w-full max-w-[333px]">
         <p className="text-[24px] font-[700] leading-[40px]">
           WE WILL PROVIDE YOU ALL DETAILS (SO THEY CAN'T SAY IT'S AN OLD
           PROFILE)

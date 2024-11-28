@@ -2,7 +2,7 @@ import React from "react";
 
 const Telegram = () => {
   return (
-    <div className=" text-white  min-h-screen flex flex-col items-center justify-center p-6">
+    <div className=" mt-[304px] text-white flex flex-col items-center justify-center max-w-[1200px] mx-auto">
       {/* Left Section */}
       <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-12">
         {/* Left Content */}
@@ -22,7 +22,7 @@ const Telegram = () => {
         </div>
 
         {/* Right Content */}
-        <div className="sm:w-1/2  p-6 rounded-lg text-left shadow-lg relative">
+        <div className="sm:w-1/2  p-6 rounded-lg text-left relative">
           <div className="absolute -top-[100px] left-0 bg-[#5738AF] text-[#D0D5FF] -rotate-[20deg] text-[60px] leading-[70px] px-3 py-1 rounded-[5px] font-[700]">
             WTF!
           </div>

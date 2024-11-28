@@ -2,10 +2,10 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div className=" text-white min-h-screen flex flex-col items-center justify-center p-8">
+    <div className=" text-white flex flex-col items-center justify-center h-screen">
       {/* Header Text */}
       <div className="text-center">
-        <h1 className="text-[40px] md:text-[80px] leading-[41px] md:leading-[88px] font-[700] text-[#FFCCDE]  mb-4">
+        <h1 className="text-[40px] md:text-[80px] leading-[41px] md:leading-[88px] font-[700] text-[#FFCCDE] mb-4">
           DON'T HAVE ANY DOUBT ANYMORE
         </h1>
         <a

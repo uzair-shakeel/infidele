@@ -1,10 +1,21 @@
 "use client";
 
-import React, { useRef } from "react";
-import { FaQuoteLeft } from "react-icons/fa";
-import "../globals.css";
+import React from "react";
+import "../globals.css"; 
+import Image from "next/image";
 
+// Reviews Data
 const reviews = [
+
+  {
+    title: "sadly writing a good review",
+    content:
+      "I wish I would not write this review but anywa...I didn’t expect much when I tried this service, but wow – I was blown away! It helped me uncover the truth I needed to make important decisions in my life. If you’re in doubt, don’t hesitate. This is a game-changer.",
+    name: "James",
+    location: "London",
+    relationship: "in relationship since 2 years",
+    bgColor: "bg-[#F9BF28] ",
+  },
   {
     title: "EASY AND EFFECTIVE",
     content:
@@ -12,131 +23,126 @@ const reviews = [
     name: "SARAH",
     location: "NEW YORK",
     relationship: "In relationship since 5 years",
-    bgColor: "bg-[#5738AF] text-white",
+    bgColor: "bg-[#5738AF]",
   },
   {
-    title: "SADLY WRITING A GOOD REVIEW",
+    title: "Worth Every Penny",
     content:
-      "Wish I would not write this review but anyways... I didn't expect much when I tried this service, but wow – I was blown away! It helped me uncover the truth I needed to make important decisions in my life. If you're in doubt, don't hesitate. This is a game-changer.",
-    name: "JAMES",
-    location: "LONDON",
-    relationship: "In relationship since 2 years",
-    bgColor: "bg-yellow-400",
-  },
-  {
-    title: "WORTH EVERY PENNY",
-    content:
-      "Trust is everything in a relationship, but when I started to question my husband's honesty, this tool came to the rescue. It gave me accurate insights about my now ex-husband on Tinder. He tried to act like it was old profiles but I could see the last activity… then he admitted everything.",
+      "Trust is everything in a relationship, but when I started to question my husband honesty, this tool came to the rescue. It gave me accurate insights about my now ex husband on Tinder, he tried to act like it was an old profile but I could see the last activity... then he admitted everything.  ",
     name: "EMMA",
-    location: "SYDNEY",
-    relationship: "Married since 12 years",
-    bgColor: "bg-gray-100 text-black",
+    location: "Sydney",
+    relationship: "In relationship since 5 years",
+    bgColor: "bg-[#FFF6E8]",
   },
   {
-    title: "FINALLY... I KNOW",
+    title: "Finally.. I know",
     content:
-      "I had doubts but couldn't find solid proof until I tried this tool. The results were eye-opening, and I'm so thankful for this service. It gave me the confidence to make the right choices for my future. Thank you for creating such a helpful platform!",
-    name: "LUCAS",
-    location: "PARIS",
-    relationship: "In relationship since 8 years",
-    bgColor: "bg-purple-300",
+      "I had doubts but couldn’t find solid proof until I tried this tool. The results were eye-opening, and I’m so thankful for this service. It gave me the confidence to make the right choices for my future. Thank you for creating such a helpful platform! ",
+    name: "Lucas",
+    location: "Paris",
+    relationship: "In relationship since 5 years",
+    bgColor: "bg-[#D0D5FF]",
   },
-  {
-    title: "LIFE-CHANGING DISCOVERY",
-    content:
-      "I was skeptical at first, but this tool exceeded my expectations. It provided me with concrete evidence that helped me confront a difficult situation in my relationship. The peace of mind it gave me was invaluable.",
-    name: "OLIVIA",
-    location: "TORONTO",
-    relationship: "Married since 3 years",
-    bgColor: "bg-green-400 text-black",
-  },
-  {
-    title: "QUICK AND RELIABLE",
-    content:
-      "I needed answers fast, and this service delivered. Within minutes, I had the information I was looking for. The interface was intuitive, and the results were presented clearly. It's a must-try for anyone in doubt.",
-    name: "ETHAN",
-    location: "BERLIN",
-    relationship: "In relationship since 1 year",
-    bgColor: "bg-blue-400 text-white",
-  },
-  {
-    title: "SAVED ME FROM A BIG MISTAKE",
-    content:
-      "I was about to make a huge commitment without knowing the full picture. Thanks to this tool, I uncovered some crucial information that made me reconsider. It's not just a service; it's a lifesaver.",
-    name: "SOPHIA",
-    location: "MIAMI",
-    relationship: "Dating for 6 months",
-    bgColor: "bg-red-400 text-white",
-  },
-  {
-    title: "PROFESSIONAL AND DISCREET",
-    content:
-      "What impressed me most was the professionalism and discretion of this service. The results were comprehensive, yet the process felt completely private and secure. I felt respected as a user throughout my experience.",
-    name: "ALEXANDER",
-    location: "MOSCOW",
-    relationship: "Engaged for 1 year",
-    bgColor: "bg-indigo-400 text-white",
-  },
+
+
 ];
 
 export default function ScrollableReviews() {
-  const scrollContainerRef = useRef(null);
+  const getTextColor = (bgColor) => {
+    switch (bgColor) {
+      case 'bg-[#5738AF]':
+        return {
+          title: 'text-[#FFF6E8]',
+          content: 'text-[#E8E8EE]',
+          name: 'text-[#FFF6E8]',
+          location: 'text-[#FFCCDE]',
+          relationship: 'text-[#FFF6E8]'
+        };
+      case 'bg-[#F9BF28]':
+        return {
+          title: 'text-[#1C1C1C]',
+          content: 'text-[#1C1C1C]',
+          name: 'text-[#1B1B1B]',
+          location: 'text-[#EC543B]',
+          relationship: 'text-[#1C1C1C]'
+        };
+      case 'bg-[#FFF6E8]':
+        return {
+          title: 'text-[#1C1C1C]',
+          content: 'text-[#1C1C1C]',
+          name: 'text-[#1B1B1B]',
+          location: 'text-[#5738AF]',
+          relationship: 'text-[#1C1C1C]'
+        };
+      case 'bg-[#D0D5FF]':
+        return {
+          title: 'text-[#1C1C1C]',
+          content: 'text-[#1C1C1C]',
+          name: 'text-[#1B1B1B]',
+          location: 'text-[#5738AF]',
+          relationship: 'text-[#1C1C1C]'
+        };
+      default:
+        return {
+          title: 'text-[#000000]',
+          content: 'text-[#000000]',
+          name: 'text-[#000000]',
+          location: 'text-[#EC543B]',
+          relationship: 'text-[#000000]'
+        };
+    }
+  };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-8 bg-[#1a1a1a]">
+    <div className="mt-[203px] flex flex-col items-center justify-center w-full">
       {/* Header */}
-      <div className="text-center mb-12 relative">
-        <div className="absolute -top-16 left-1/2 -translate-x-1/2">
-          <FaQuoteLeft className="text-[#00A651] text-5xl" />
+      <div className="text-center relative">
+        <div className="absolute -left-24 -top-10">
+          <Image src='/review-heading.svg' alt="logo" width={87} height={76} />
         </div>
-        <h1 className="text-4xl md:text-[64px] leading-tight font-bold text-[#FFF6E8] mt-8">
+        <h1 className="text-4xl md:text-[64px] leading-tight font-bold text-[#FFF6E8]">
           WE'VE HELPED THOUSANDS <br /> OF GOOD PEOPLE
         </h1>
       </div>
 
-      {/* Reviews Container */}
-      <div className="w-full max-w-7xl relative">
-        {/* Scrollable Container */}
-        <div
-          ref={scrollContainerRef}
-          className="overflow-x-auto flex gap-6 pb-4 snap-x snap-mandatory scrollbar-hide"
-          style={{
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
-          }}
-        >
-          {reviews.map((review, index) => (
-            <div
-              key={index}
-              className="flex-none w-[85vw] md:w-[45vw] lg:w-[30vw] snap-start"
-            >
+      {/* Marquee Slider */}
+      <div className="relative overflow-hidden w-full mt-[98px]">
+        <div className="animate-marquee flex">
+          {/* Loop the reviews for continuous effect */}
+          {[...reviews, ...reviews].map((review, index) => {
+            const { title, content, name, location, relationship, bgColor } = review;
+            const textColors = getTextColor(bgColor); // Get text colors based on the bgColor
+
+            return (
               <div
-                className={`p-6 rounded-[16px] shadow-md flex flex-col justify-between h-full ${review.bgColor}`}
+                key={index}
+                className={`p-8 m-2 md:m-4 rounded-[16px] shadow-md flex flex-col justify-between w-full min-w-[307px] xl:min-w-[475px] min-h-[400px] ${bgColor.trim()}`}
               >
                 <div>
-                  <h2 className="text-[30px] leading-[33px] font-bold mb-4">
-                    {review.title}
+                  <h2 className={`text-[30px] leading-[33px] font-bold mb-4 tracking-[0.24px] uppercase ${textColors.title}`}>
+                    {title}
                   </h2>
-                  <p className=" text-[12.50px] leading-[21px] mb-6 font-serif in-h-[120px]">
-                    {review.content}
+                  <p className={`text-[12.03px] leading-[21px] mb-6 slider-p font-sans font-medium ${textColors.content}`}>
+                    {content}
                   </p>
                 </div>
                 <div>
-                  <div className="text-[20px] leading-[22px] font-bold">
-                    {review.name}
-                  </div>
-                  <div className="font-bold text-[#FFCCDE] text-[20px]">
-                    {review.location}
-                  </div>
-                  <div className="text-[12.50px] leading-[21px] ">
-                    {review.relationship}
-                  </div>
+                  <h2 className={`text-[20px] leading-[22px] font-bold tracking-[0.24px] ${textColors.name}`}>
+                    {name}
+                  </h2>
+                  <h2 className={`font-bold text-[20px] tracking-[0.24px] uppercase ${textColors.location}`}>
+                    {location}
+                  </h2>
+                  <p className={`text-[12.50px] leading-[19.6px] font-medium font-sans slider-p ${textColors.relationship}`}>
+                    {relationship}
+                  </p>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
   );
 }
+

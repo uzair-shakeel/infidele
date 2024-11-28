@@ -7,12 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+      },
+      colors: {
+        customRed: '#EC543B',  
       },
     },
   },
