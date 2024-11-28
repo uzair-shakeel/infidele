@@ -106,7 +106,7 @@ export default function ScrollableReviews() {
       </div>
 
       {/* Marquee Slider */}
-      <div className="relative overflow-hidden w-full mt-[98px]">
+      <div className="relative overflow-x-hidden w-full mt-[98px]">
         <div className="animate-marquee flex">
           {/* Loop the reviews for continuous effect */}
           {[...reviews, ...reviews].map((review, index) => {
@@ -116,7 +116,7 @@ export default function ScrollableReviews() {
             return (
               <div
                 key={index}
-                className={`p-8 m-2 md:m-4 rounded-[16px] shadow-md flex flex-col justify-between w-full min-w-[307px] xl:min-w-[475px] min-h-[300px] ${bgColor.trim()}`}
+                className={`p-8 m-2 md:m-4 rounded-[16px] hover:-rotate-2 transition duration-300 shadow-md flex flex-col justify-between w-full min-w-[307px] xl:min-w-[475px] min-h-[300px] ${bgColor.trim()}`}
               >
                 <div>
                   <h2 className={`text-[30px] leading-[33px] font-bold mb-3 tracking-[0.24px] uppercase ${textColors.title}`}>
