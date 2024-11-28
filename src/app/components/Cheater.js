@@ -28,18 +28,18 @@ const Cheater = () => {
   };
 
   return (
-    <div className=" text-white min-h-screen flex items-center justify-center p-6">
+    <div className=" text-white min-h-screen flex flex-col md:flex-row items-center justify-center p-6">
       <div>
         {/* Header Section */}
         <div className=" mb-12">
-          <h1 className="text-[48px] md:text-[64px] font-bold leading-[70px]">
+          <h1 className="text-[38px] md:text-[48px] lg:text-[64px] font-bold leading-[48px] md:leading-[70px]">
             WE ALREADY DETECTED <br />
             MORE THAN +5000 CHEATERS
           </h1>
         </div>
 
         {/* Cheater Profiles Section */}
-        <div className="flex flex-wrap justify-start gap-6">
+        <div className="flex flex-col md:flex-row flex-wrap justify-start gap-6">
           {/* Example Cards */}
           <div className="relative h-[233px] w-[234px] ">
             <div className=" overflow-hidden h-full w-full">
@@ -77,10 +77,10 @@ const Cheater = () => {
             <div
               onClick={() => toggleDetail(index)}
               className={`flex justify-between items-center cursor-pointer transition-colors duration-200 ${
-                openIndex === index ? "text-[#F54E26]" : "text-white"
+                openIndex === index ? "text-[#F54E26]" : "text-[#A7A9BE]"
               }`}
             >
-              <span className="text-lg md:text-xl font-bold">
+              <span className="text-[36px] leading-[40px]   font-bold">
                 {item.question}
               </span>
               <span

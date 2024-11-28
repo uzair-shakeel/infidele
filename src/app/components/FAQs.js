@@ -38,7 +38,7 @@ const FAQs = () => {
 
   return (
     <div className=" text-white min-h-screen flex flex-col items-center justify-center p-6">
-      <h1 className="text-[64px] leading-[70px] font-bold mb-6 text-center">
+      <h1 className="text-[40px] md:text-[64px] leading-[70px] font-bold mb-6 text-center">
         FREQUENTLY ASKED <br /> QUESTIONS
       </h1>
       <div className="w-full">
@@ -50,7 +50,7 @@ const FAQs = () => {
                 openIndex === index ? "text-[#5738AF]" : "text-[#FFF6E8]"
               }`}
             >
-              <span className="text-[48px] leading-[52px] font-[700]">
+              <span className="text-[36px] md:text-[48px] leading-[52px] font-[700]">
                 {item.question}
               </span>
               <span

@@ -4,14 +4,14 @@ export default function Hero() {
       {/* Top Navigation */}
       <div className="w-full flex justify-between items-center p-6">
         <img src="/Group 16.png" />{" "}
-        <button className="bg-[#F54E26] text-white px-6 py-3 rounded-[5px] text-[24] min-w-[150px] font-[700] transition">
+        <button className="bg-[#F54E26] text-white px-6 py-3 rounded-[5px] text-[24] min-w-[128px] lg:min-w-[150px] font-[700] transition">
           LOGIN →
         </button>
       </div>
 
       {/* Hero Content */}
-      <div className="text-center mt-16">
-        <h1 className="text-[73px] leading-[90px] text-[#FFF6E8] font-[700]">
+      <div className="text-center mt-0 md:mt-10 lg:mt-16">
+        <h1 className="text-[40px] lg:text-[73px] leading-[48px] lg:leading-[90px] text-[#FFF6E8] font-[700]">
           IS SOMETHING FEELING <span className="text-[#F54E26]">OFF?</span>,{" "}
           <br />
           FIND OUT WITH AI IF YOUR{" "}
