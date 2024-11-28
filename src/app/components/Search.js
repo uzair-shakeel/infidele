@@ -3,7 +3,7 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div className=" text-white flex flex-col items-center justify-center my-[150px] md:h-screen">
+    <div className=" text-white flex flex-col items-center justify-center my-[150px] md:my-0 md:h-screen">
       {/* Header Text */}
       <div className="text-center">
         <h1 className="text-[40px] md:text-[80px] tracking-[0.8px] leading-[41px] md:leading-[88px] font-[700] text-[#FFCCDE]">
