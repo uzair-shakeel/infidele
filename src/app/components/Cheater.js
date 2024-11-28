@@ -39,7 +39,7 @@ const Cheater = () => {
         </div>
 
         {/* Cheater Profiles Section */}
-        <div className="flex flex-col md:flex-row flex-wrap justify-start gap-6">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center md:justify-start gap-6">
           {/* Example Cards */}
           <div className="relative h-[233px] w-[234px] ">
             <div className=" overflow-hidden h-full w-full">
