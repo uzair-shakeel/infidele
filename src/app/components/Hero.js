@@ -4,10 +4,11 @@ export default function Hero() {
   return (
     <section className=" text-white flex flex-col items-center justify-between relative max-w-[1380px] mx-auto">
       {/* Top Navigation */}
-      <div className="w-full flex justify-between items-center">
+      <div className="w-full flex justify-between items-center h-[80px]">
         <img src="/Group 16.png" />{" "}
-        <button className="bg-[#F54E26] text-white px-6 py-3 rounded-[5px] text-[24] min-w-[128px] lg:min-w-[150px] font-[700] transition">
-          LOGIN →
+        <button className="bg-[#F54E26] text-white px-6 h-[45px] flex items-center justify-center gap-2 rounded-[5px] text-[24px] min-w-[128px] lg:min-w-[156px] font-bold tracking-[0.64px]">
+           LOGIN 
+           <Image src='/login-arrow.svg' alt="login-arrow" width={16} height={28} className="-mt-2" />
         </button>
       </div>
 
