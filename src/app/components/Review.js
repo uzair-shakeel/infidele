@@ -60,9 +60,9 @@ const Review = () => {
             className={`p-6 rounded-[16px] shadow-md ${review.bgColor}`}
           >
             <h2 className="text-lg font-bold mb-4">{review.title}</h2>
-            <p className="text-sm mb-6">{review.content}</p>
+            <p className="text-sm mb-6  slider-p font-sans">{review.content}</p>
             <div className="text-sm font-bold">{review.name}</div>
-            <div className="text-sm text-gray-300">{review.location}</div>
+            <div className=" font-bold text-[#FFCCDE] text-[20px]">{review.location}</div>
             <div className="text-sm text-gray-400">{review.relationship}</div>
           </div>
         ))}

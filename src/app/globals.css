@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,15 +7,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'FormulaCondensed-Light', sans-serif !important;
 }
-
-body {
-  font-family: 'GeistMono', sans-serif !important; 
-}
-
+/* styles/globals.css */
 @font-face {
-  font-family: 'GeistMono'; 
-  src: url('/fonts/GeistMonoVF.woff') format('woff');  
-  font-weight: normal;  
-  font-style: normal; 
+  font-family: 'FormulaCondensed-Light';
+  src: url('/fonts/FormulaCondensed-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the font globally */
+body {
+  font-family: 'FormulaCondensed-Light', sans-serif !important;
+}
+
+.slider-p{
+  font-family: "Inter", sans-serif;
 }
